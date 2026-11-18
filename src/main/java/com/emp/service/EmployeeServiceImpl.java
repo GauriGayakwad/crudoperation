@@ -6,7 +6,7 @@ import com.emp.model.Employee;
 import com.emp.repository.EmployeeRepository;
 
 @Service
-public class EmployeeServiceImpl {
+public class EmployeeServiceImpl implements EmployeeService{
 
 	EmployeeRepository er;
 
