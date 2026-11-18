@@ -39,7 +39,7 @@ public class EmployeeController {
 	public List<Employee> getData(){
 		List<Employee>list=es.getAllData();
 		return list;
-    
+	}
 	@DeleteMapping("/deleteById/{empid}")
 	public String deleteById(@PathVariable Integer empid)
 	{
