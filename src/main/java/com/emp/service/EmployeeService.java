@@ -11,4 +11,6 @@ public interface EmployeeService {
 	public Employee getById(Integer empid);
 	
 	public List<Employee> getAllData();
+
+	public void deleteById(Integer empid);
 }

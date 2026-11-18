@@ -1,6 +1,8 @@
 package com.emp.controlller;
 
+
 import java.util.List;
+import org.springframework.web.bind.annotation.DeleteMapping;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -37,5 +39,12 @@ public class EmployeeController {
 	public List<Employee> getData(){
 		List<Employee>list=es.getAllData();
 		return list;
+    
+	@DeleteMapping("/deleteById/{empid}")
+	public String deleteById(@PathVariable Integer empid)
+	{
+		es.deleteById(empid);
+		return "Record deleted "+empid;
+
 	}
 }
