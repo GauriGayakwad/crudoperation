@@ -31,7 +31,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 	public List<Employee> getAllData() {
 		List<Employee> list=er.findAll();
 		return list;
-
+	}
 
 	@Override
 	public void deleteById(Integer empid) {
