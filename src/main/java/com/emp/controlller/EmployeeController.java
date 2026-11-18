@@ -1,5 +1,7 @@
 package com.emp.controlller;
 
+import java.util.List;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -29,5 +31,11 @@ public class EmployeeController {
 	{
 		Employee e=es.getById(empid);
 		return e;
+	}
+	
+	@GetMapping("/getAllData")
+	public List<Employee> getData(){
+		List<Employee>list=es.getAllData();
+		return list;
 	}
 }
