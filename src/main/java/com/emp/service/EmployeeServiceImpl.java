@@ -18,4 +18,10 @@ public class EmployeeServiceImpl implements EmployeeService{
 		er.save(e);
 		return e;
 	}
+
+	@Override
+	public Employee getById(Integer empid) {
+		Employee e=er.findById(empid).get();
+		return e;
+	}
 }
