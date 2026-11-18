@@ -24,4 +24,10 @@ public class EmployeeServiceImpl implements EmployeeService{
 		Employee e=er.findById(empid).get();
 		return e;
 	}
+
+	@Override
+	public void deleteById(Integer empid) {
+		 er.deleteById(empid);
+
+	}
 }
